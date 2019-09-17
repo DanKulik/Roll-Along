@@ -1,7 +1,7 @@
 # Roll-Along
 
 Roll Along is a arcade style game created using Pygame.
-This game is really simple with currently only three components as its basis
+This game is really simple with currently only three components as its basis.
 The user is a red ball that has to navigate a randomly generated maze to get to the other
 side of the screen. However smaller blue balls (streamers) move vertically and horizontally that will set you
 back to restart if you interact with them. Walls of the maze also restrict your movements to apply extra difficulty.
