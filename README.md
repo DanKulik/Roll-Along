@@ -20,7 +20,7 @@ more than welcome to edit the code to adjust the rendering parameters or the .tx
 
 Inside game options include:
 
-Play: press enter to start
+Play: press enter to start; press spacebar to pause and unpause game
 
 Settings: press enter
         Audio: press -r to remove audio, or -i to insert playlist.
