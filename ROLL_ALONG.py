@@ -3,7 +3,7 @@
 
 # In[1]:
 
-#Author: Daniel Moshe Kulik
+#Author: Daniel Kulik
 
 # Setup Python ----------------------------------------------- #
 import random, os, glob, time, sys
@@ -17,6 +17,7 @@ WIDTH = 1200
 
 radius = 10
 running = False
+paused = False
 
 x = 10
 y = 10
@@ -118,10 +119,7 @@ def music(schoice):
     
     for tune in glob.glob(mfold + "*.mp3"):
         songs.append(tune)
-    
-    #song = random.randint(0,len(songs)-1)
-    #pygame.mixer.music.load(str(songs[song]))
-
+        
     if (schoice == 0) or (schoice==len(songs)):
         schoice = 0
         songs = random.sample(songs,len(songs))
@@ -305,9 +303,40 @@ while run:
             pygame.quit()
             sys.exit()
 
-        # Update Player Movement & Maze Encounters ------------- #
         if event.type == pygame.KEYDOWN:
             
+            #Pause Function --------------------------------------- #
+            if (event.key == pygame.K_SPACE):
+
+                paused = not paused
+
+                while paused:
+                    
+                    try:
+                        pygame.mixer.music.pause()
+                    except:
+                        pass
+                    
+                    pygame.time.delay(300)
+                    
+                    for event in pygame.event.get():
+                        
+                        if event.type == pygame.QUIT:
+                            pygame.quit()
+                            sys.exit()
+                            
+                        if event.type == pygame.KEYDOWN:
+
+                            if (event.key == pygame.K_SPACE):
+                                
+                                try:
+                                    pygame.mixer.music.unpause()
+                                except:
+                                    pass
+
+                                paused = not paused
+                                
+            # Update Player Movement & Maze Encounters ------------- #
             if (event.key == pygame.K_w) or (event.key == pygame.K_UP) & (y>=15):
             
                 yes = True
@@ -322,8 +351,6 @@ while run:
             
                 if yes:    
                     y = y - 7
-                    #Could remove laging effect
-                    #pygame.display.update()
                 
             if (event.key == pygame.K_s) or (event.key == pygame.K_DOWN) & (y<=HEIGHT-15):
             
@@ -338,7 +365,6 @@ while run:
                         yes = False                                
                 if yes:    
                     y = y + 7
-                    #pygame.display.update()
                    
             if (event.key == pygame.K_a) or (event.key == pygame.K_LEFT) & (x>=15):
             
@@ -353,7 +379,6 @@ while run:
                         yes = False
                 if yes:
                     x = x - 7
-                    #pygame.display.update()
                 
             if (event.key == pygame.K_d) or (event.key == pygame.K_RIGHT):
 
@@ -380,7 +405,6 @@ while run:
                 
                 if yes:    
                     x = x + 7
-                    #pygame.display.update()
 
         # Test Lose Paramaters -------------------------------- #        
         running = Lose()
@@ -537,7 +561,7 @@ while run:
                                         silent = True
                                     if (event.key == pygame.K_i):
                                         try:
-                                            music()
+                                            music(schoice)
                                         except:
                                             pass
                                               
@@ -614,7 +638,3 @@ sys.exit()
 
 
 # In[ ]:
-
-
-
-
