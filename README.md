@@ -20,7 +20,7 @@ more than welcome to edit the code to adjust the rendering parameters or the .tx
 
 Inside game options include:
 
-Play: press enter to start; press spacebar to pause and unpause game
+Play: press enter to start; press spacebar to pause and unpause game.
 
 Settings: press enter
         Audio: press -r to remove audio, or -i to insert playlist.
@@ -35,7 +35,7 @@ All inside game changes by the user should be updated immediately with your diff
 right hand corner. Also during play the right hand corner will indicate the number of runs completed since the start of play.
 
 All in all I hope that you enjoy the gameplay and interact by adding your own favorite game music and backgrounds (however black and 
-white images are preferable in my experience color images seem to become too distracting) 
+white images are preferable. In my experience color images seem to become too distracting) 
 
 If you notice any bugs or possible changes that could/should be added or fixed please feel free to notify me Severian-desu-ga.
 
