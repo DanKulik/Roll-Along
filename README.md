@@ -23,7 +23,7 @@ Inside game options include:
 Play: press enter to start; press spacebar to pause and unpause game.
 
 Settings: press enter
-        Audio: press -r to remove audio, or -i to insert playlist.
+        Audio: press -r to remove audio, -i to insert playlist, or +- to adjust volume.
         Background: press -r to remove backround (Black Screen/Classic arcade feel), or -i to insert.
         Difficulty: press -e for easy, -m for moderate, -h for hard.
         Reset Hi-score: press -r to reset run/score to 0.
