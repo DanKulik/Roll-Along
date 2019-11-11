@@ -34,6 +34,8 @@ Exit - press enter to leave.
 All inside game changes by the user should be updated immediately with your difficulty choice and highest run/score indicated in the top
 right hand corner. Also during play the right hand corner will indicate the number of runs completed since the start of play.
 
+Changes from Roll Along Version 1 to 2 include faster functions and a decrease of cpu processing of 25% to 3-10% (if background is included or not) This was done by decreasing the fmps and increasing objects' motion speeds.
+
 All in all I hope that you enjoy the gameplay and interact by adding your own favorite game music and backgrounds (however black and 
 white images are preferable. In my experience color images seem to become too distracting) 
 
