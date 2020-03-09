@@ -36,7 +36,7 @@ right hand corner. Also during play the right hand corner will indicate the numb
 
 Changes from Roll Along Version 1 to 2 include faster functions and a decrease of cpu processing of 25% to 3-10% (if background is included or not) This was done by decreasing the fmps(100->24) and increasing all objects' motion velocities.
 
-A Linux version has been added due to the in game music mixer causing high cpu usage. Pressing the f-key will open your default music player and play all the songs from your MUSIC folder. The functions that complete this task may partially or completely fail. Issues inclue: opening muliple player windows (depending on default player), identifying the wrong PID for the player (this issue is self-solvable by editing the script so as to only identify the player PID by player name). Player's window self-minimization may also not work and volume must be adjusted outside of gameplay.
+A Linux version has been added due to the in game music mixer causing high cpu usage. Pressing the f-key will open your default music player and play all the songs from your MUSIC folder. The functions that complete this task may partially or completely fail. Issues include: opening muliple player windows (depending on default player), identifying the wrong PID for the player (this issue is self-solvable by editing the script so as to only identify the player PID by player name). Player's window self-minimization may also not work and volume must be adjusted outside of gameplay.
 
 All in all I hope that you enjoy the gameplay and interact by adding your own favorite game music and backgrounds (however black and white images are preferable. In my experience color images seem to become too distracting) 
 
