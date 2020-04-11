@@ -12,11 +12,7 @@ Background: will allow you to insert multiple image type files that can be set a
 
 Music: Allows you to insert multiple audio file types that will then create a random playlist that will start as you play.
 
-Game_Stats: will contain two .txt files. One will keep track of your highest run/score, while the other will
-measure the latency of your computer to try and give a unique rendering speed so as to make the gameplay standard
-throughout any device used. 
-(This was tested on both Ubuntu 18.04 and Windows 7, however it is still a little buggy and your are
-more than welcome to edit the code to adjust the rendering parameters or the .txt file itself)
+Game_Stats: will contain four .txt files. Three will keep track of your highest run/score based on the three difficulties available; while the other will measure the latency of your computer to try and give a unique rendering speed so as to make the gameplay standard throughout any device used. (This was tested on both Ubuntu 18.04 and Windows 7, however it is still a little buggy and your are more than welcome to edit the code to adjust the rendering parameters or the .txt file itself)
 
 Inside game options include:
 
